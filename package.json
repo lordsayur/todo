@@ -1,0 +1,15 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "To Do application following clean architecture and pnpm workspace",
+  "scripts": {
+    "test": "pnpm --recursive run test"
+  },
+  "keywords": [
+    "todo",
+    "clean architecture",
+    "pnpm workspace"
+  ],
+  "author": "lordsayur",
+  "license": "MIT"
+}
