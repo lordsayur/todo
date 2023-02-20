@@ -16,8 +16,13 @@ importers:
   packages/use-cases:
     specifiers:
       '@todo/entities': workspace:^1.0.0
+      '@vitest/ui': ^0.28.5
+      vitest: ^0.28.5
     dependencies:
       '@todo/entities': link:../entities
+    devDependencies:
+      '@vitest/ui': 0.28.5
+      vitest: 0.28.5_@vitest+ui@0.28.5
 
 packages:
 
