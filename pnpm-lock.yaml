@@ -13,6 +13,14 @@ importers:
       '@vitest/ui': 0.28.5
       vitest: 0.28.5_@vitest+ui@0.28.5
 
+  packages/infrastructure/data-access/in-memory:
+    specifiers:
+      '@vitest/ui': ^0.28.5
+      vitest: ^0.28.5
+    devDependencies:
+      '@vitest/ui': 0.28.5
+      vitest: 0.28.5_@vitest+ui@0.28.5
+
   packages/use-cases:
     specifiers:
       '@todo/entities': workspace:^1.0.0
