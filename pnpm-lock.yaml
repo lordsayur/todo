@@ -1,0 +1,12 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers: {}
+
+  packages/use-cases:
+    specifiers:
+      '@todo/entities': workspace:^1.0.0
+    dependencies:
+      '@todo/entities': link:../entities

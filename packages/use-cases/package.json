@@ -5,5 +5,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "lordsayur",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@todo/entities": "workspace:^1.0.0"
+  }
 }
