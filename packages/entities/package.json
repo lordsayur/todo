@@ -2,8 +2,12 @@
   "name": "@todo/entities",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run"
   },
   "author": "lordsayur",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/ui": "^0.28.5",
+    "vitest": "^0.28.5"
+  }
 }
