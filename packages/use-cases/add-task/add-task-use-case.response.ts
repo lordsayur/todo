@@ -4,5 +4,5 @@ export type AddTaskUseCaseResponse = {
   id: number;
   description: string;
   status: TaskStatus;
-  parentTaskId?: number;
+  parentTaskId: number | null;
 };
