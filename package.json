@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "To Do application following clean architecture and pnpm workspace",
   "scripts": {
+    "prepare": "husky install",
     "test": "pnpm --recursive run test"
   },
   "keywords": [
@@ -11,5 +12,8 @@
     "pnpm workspace"
   ],
   "author": "lordsayur",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
 }
