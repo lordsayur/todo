@@ -2,6 +2,7 @@ import { Task, TaskStatus } from "@todo/entities";
 
 export interface TaskRepository {
   add(
+    createdByUserId: number,
     description: string,
     taskStatus?: TaskStatus,
     parentTaskId?: number
