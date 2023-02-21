@@ -15,11 +15,13 @@ importers:
 
   packages/infrastructure/web-api:
     specifiers:
+      '@todo/entities': workspace:^1.0.0
       '@todo/in-memory': workspace:^1.0.0
       '@todo/use-cases': workspace:^1.0.0
       '@vitest/ui': ^0.28.5
       vitest: ^0.28.5
     dependencies:
+      '@todo/entities': link:../../entities
       '@todo/in-memory': link:../data-access/in-memory
       '@todo/use-cases': link:../../use-cases
     devDependencies:
