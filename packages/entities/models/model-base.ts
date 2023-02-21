@@ -1,4 +1,4 @@
-export class ModelBase {
+export abstract class ModelBase {
   public id: number;
   public createdDate: Date;
   public updatedDate: Date | null = null;
