@@ -9,11 +9,12 @@ export class AddTaskUseCase {
   public async execute(
     request: AddTaskUseCaseRequest
   ): Promise<AddTaskUseCaseResponse> {
-    const addedTask = this._taskRepository.add(
+    const addedTask = await this._taskRepository.add(
+      request.userId,
       request.description,
       request.status,
       request.parentTaskId
-    ) as Task;
+    );
 
     const response: AddTaskUseCaseResponse = {
       id: addedTask.id,
