@@ -11,6 +11,7 @@
     "vitest": "^0.28.5"
   },
   "dependencies": {
+    "@todo/in-memory": "workspace:^1.0.0",
     "@todo/use-cases": "workspace:^1.0.0"
   }
 }

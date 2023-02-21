@@ -13,25 +13,14 @@ importers:
       '@vitest/ui': 0.28.5
       vitest: 0.28.5_@vitest+ui@0.28.5
 
-  packages/infrastructure/data-access/in-memory:
-    specifiers:
-      '@todo/entities': workspace:^1.0.0
-      '@todo/use-cases': workspace:^1.0.0
-      '@vitest/ui': ^0.28.5
-      vitest: ^0.28.5
-    dependencies:
-      '@todo/entities': link:../../../entities
-      '@todo/use-cases': link:../../../use-cases
-    devDependencies:
-      '@vitest/ui': 0.28.5
-      vitest: 0.28.5_@vitest+ui@0.28.5
-
   packages/infrastructure/web-api:
     specifiers:
+      '@todo/in-memory': workspace:^1.0.0
       '@todo/use-cases': workspace:^1.0.0
       '@vitest/ui': ^0.28.5
       vitest: ^0.28.5
     dependencies:
+      '@todo/in-memory': link:../data-access/in-memory
       '@todo/use-cases': link:../../use-cases
     devDependencies:
       '@vitest/ui': 0.28.5
