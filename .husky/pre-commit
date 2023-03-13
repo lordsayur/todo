@@ -1,7 +1,10 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Run prettier on all staged files
+# Run eslint on all files
+npx eslint . --fix --max-warnings=0
+
+# Run prettier on all files
 npx prettier --write .
 
 # Add the prettified files to the commit
