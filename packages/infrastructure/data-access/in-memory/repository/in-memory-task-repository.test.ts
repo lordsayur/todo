@@ -4,7 +4,7 @@ import { Task, TaskStatus } from "@todo/entities";
 import { InMemoryTaskRepository } from "./in-memory-task-repository";
 
 describe("InMemoryTaskRepository", () => {
-  let mockedDate: Date = new Date("2020-01-01");
+  const mockedDate: Date = new Date("2020-01-01");
 
   beforeAll(() => {
     vi.useFakeTimers();

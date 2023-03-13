@@ -1,4 +1,3 @@
-import { Task } from "@todo/entities";
 import { TaskRepository } from "../ports/task-repository";
 import { AddTaskUseCaseRequest } from "./add-task-use-case.request";
 import { AddTaskUseCaseResponse } from "./add-task-use-case.response";

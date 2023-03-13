@@ -1,7 +1,7 @@
 import { describe, test, expect } from "vitest";
 import { Task } from "@todo/entities";
 import { InMemoryTaskRepository } from "@todo/in-memory";
-import { AddTaskUseCaseRequest, AddTaskUseCaseResponse } from "@todo/use-cases";
+import { AddTaskUseCaseRequest } from "@todo/use-cases";
 
 import { TaskService } from "./task-service";
 
