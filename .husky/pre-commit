@@ -1,11 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# Run eslint on all files
-npx eslint . --fix --max-warnings=0
-
-# Run prettier on all files
-npx prettier --write .
-
-# Add the prettified files to the commit
-git add $(git diff --cached --name-only)
+npx lint-staged
