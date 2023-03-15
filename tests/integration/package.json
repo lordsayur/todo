@@ -1,6 +1,13 @@
 {
   "name": "@todo/integration",
   "version": "1.0.0",
+  "scripts": {
+    "test": "vitest run"
+  },
   "author": "lordsayur",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@vitest/ui": "^0.28.5",
+    "vitest": "^0.28.5"
+  }
 }
