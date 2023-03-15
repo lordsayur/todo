@@ -55,10 +55,12 @@ importers:
 
   tests/integration:
     specifiers:
+      "@todo/in-memory": workspace:^1.0.0
       "@todo/use-cases": workspace:^1.0.0
       "@vitest/ui": ^0.28.5
       vitest: ^0.28.5
     dependencies:
+      "@todo/in-memory": link:../../packages/infrastructure/data-access/in-memory
       "@todo/use-cases": link:../../packages/use-cases
     devDependencies:
       "@vitest/ui": 0.28.5
