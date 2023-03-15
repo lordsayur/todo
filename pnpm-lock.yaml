@@ -55,8 +55,11 @@ importers:
 
   tests/integration:
     specifiers:
+      "@todo/use-cases": workspace:^1.0.0
       "@vitest/ui": ^0.28.5
       vitest: ^0.28.5
+    dependencies:
+      "@todo/use-cases": link:../../packages/use-cases
     devDependencies:
       "@vitest/ui": 0.28.5
       vitest: 0.28.5_@vitest+ui@0.28.5
